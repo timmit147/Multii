@@ -1,0 +1,85 @@
+.faq{
+    background-color: #1A3DB9;
+    padding: 150px 0px;
+    color:white;
+}
+
+.faq .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq details{
+    max-width: 500px;
+}
+
+.faq summary{
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    place-content: space-between;
+}
+
+.faq summary:hover{
+    background-color: black;
+}
+
+.faq summary::after {
+    content: '';
+    cursor: pointer;
+    background-repeat: no-repeat;
+    height: 20px;
+    aspect-ratio: 1;
+    background-size: contain;
+  }
+  
+  .faq details[open] summary::after {
+    background-image: url("../images/minus.svg");
+  }
+  
+  .faq details summary::after {
+    background-image: url("../images/plus.svg");
+  }
+
+.faq p {
+    margin-bottom: 0px;
+}
+
+.faq a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+
+.faq a:hover {
+    color: orange;
+}
+
+.faq .container > p{
+    margin: 0px;
+    max-width: 400px;
+}
+
+.faq h2{
+    margin: 0px;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .faq h2{
+        font-size: 30px;
+    }
+
+    .faq{
+        padding: 80px 0px;
+    }
+}

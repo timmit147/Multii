@@ -1,0 +1,100 @@
+.header-4 {
+    background-color: #1A3DB9;
+}
+
+.header-4 .container{
+    position: relative;
+    justify-content: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+}
+
+.header-4 h1 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+.header-4 picture {
+    display: flex;
+    height: 100%;
+    align-items: end;
+    justify-content: center;
+}
+
+.header-4 img{
+    width: 100%;
+    object-fit: contain;
+    object-position: bottom;
+    box-sizing: border-box;
+    margin-bottom: -20px;
+}
+
+.header-4 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-4 p {
+    max-width: 500px;
+    margin: 0;
+}
+
+.header-4 a {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    padding: 10px 15px;
+    width: fit-content;
+    font-weight: 900;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    place-items: center;
+    text-decoration: none;
+}
+
+
+.header-4 a:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+strong{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+
+    .header-4 h1{
+        font-size: 30px;
+    }
+
+    .header-4 img{
+        height: 100%;
+        padding-right: unset;
+    }
+    
+    .header-4 picture{
+        overflow: hidden;
+    }
+
+    .header-4 .container {
+        padding-bottom: 0;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .header-4 .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
