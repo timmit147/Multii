@@ -13,6 +13,10 @@
     gap: 20px;
 }
 
+.menu-4 .current{
+    font-weight: 900;
+}
+
 .menu-4 a {
     color: black;
     text-decoration: none;
@@ -28,6 +32,7 @@
     display: flex;
     justify-content: flex-end; /* Align navigation to the right */
     gap: 30px;
+    align-items: center;
 }
 
 .hamburger-menu {

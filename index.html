@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/prices.css">
+    <link rel="stylesheet" href="css/image-text.css">
+
     <meta name="description" content="Maatwerk websites voor jouw unieke bedrijf. Ontwerp, ontwikkeling en onderhoud. Neem contact op voor een vrijblijvende offerte.">
     <title>My Basic HTML Page</title>
 </head>
@@ -20,7 +22,17 @@
 
     <section class="menu-4">
         <div class="container">
-            <img src="images/logo-simple.svg" alt="Logo">
+            <svg id="mySvg" width="134" height="34" viewBox="0 0 134 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H11.427L19.2872 19.0376H19.6835L27.5437 0H38.9707V33.6111H29.9877V14.1797H29.7234L22.1935 33.3485H16.7772L9.24729 14.0484H8.98309V33.6111H0V0Z" fill="black"/>
+                <path d="M59.901 22.5825V8.40278H69.0162V33.6111H60.3634V28.8189H60.0992C59.5487 30.4273 58.5855 31.6855 57.2094 32.5936C55.8333 33.4908 54.1985 33.9394 52.305 33.9394C50.5326 33.9394 48.9804 33.5345 47.6483 32.7249C46.3273 31.9153 45.298 30.7993 44.5604 29.3769C43.8338 27.9546 43.465 26.3243 43.454 24.4862V8.40278H52.5692V22.5825C52.5802 23.8298 52.8995 24.809 53.527 25.5202C54.1655 26.2313 55.0572 26.5869 56.2021 26.5869C56.9617 26.5869 57.6167 26.4283 58.1671 26.111C58.7286 25.7828 59.1579 25.3232 59.4551 24.7324C59.7634 24.1306 59.912 23.414 59.901 22.5825Z" fill="black"/>
+                <path d="M82.7674 0V33.6111H73.6522V0H82.7674Z" fill="black"/>
+                <path d="M102.538 8.40278V14.9675H85.8265V8.40278H102.538ZM89.063 2.36328H98.1782V25.5038C98.1782 25.8539 98.2387 26.1493 98.3598 26.39C98.4809 26.6197 98.6681 26.7948 98.9213 26.9152C99.1745 27.0246 99.4992 27.0793 99.8956 27.0793C100.171 27.0793 100.49 27.0465 100.853 26.9808C101.228 26.9152 101.503 26.8605 101.679 26.8167L103 33.1844C102.593 33.3048 102.009 33.4525 101.25 33.6275C100.501 33.8026 99.6093 33.9175 98.5745 33.9722C96.4829 34.0816 94.727 33.8682 93.3069 33.3321C91.8867 32.7851 90.8189 31.9262 90.1033 30.7555C89.3878 29.5848 89.041 28.1187 89.063 26.3572V2.36328Z" fill="black"/>
+                <path class="second-color" d="M109 14H118V34H109V14Z" fill="#1A3DB9"/>
+                <path class="second-color" d="M125 14H134V34H125V14Z" fill="#1A3DB9"/>
+                <path class="second-color"  d="M118 4.5C118 6.98528 115.985 9 113.5 9C111.015 9 109 6.98528 109 4.5C109 2.01472 111.015 0 113.5 0C115.985 0 118 2.01472 118 4.5Z" fill="#1A3DB9"/>
+                <path class="second-color"  d="M134 4.5C134 6.98528 131.761 9 129 9C126.239 9 124 6.98528 124 4.5C124 2.01472 126.239 0 129 0C131.761 0 134 2.01472 134 4.5Z" fill="#1A3DB9"/>
+            </svg>
+                
             <div class="hamburger-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -30,19 +42,19 @@
                 <a href="#projecten">Projecten</a>
                 <a href="#faq">Vragen</a>
                 <a href="#prices">Prijzen</a>
-                <a href="#contact">Contact</a>
+                <a class="current" href="#contact">Contact</a>
             </nav>
         </div>
     </section>
     
-    
+
     
 
     <section class="header-4">
         <div class="container">
             <div class="content">
                 <h1>Maatwerk websites</h1>
-                <p>Als je op zoek bent naar een <strong>unieke, persoonlijke en op maat gemaakte website</strong>, dan kan ik je daarbij helpen.</p>
+                <p>Wil je een snele, persoonlijke en maatwerk website dan kan Multii je daar mee helpen. </p>
                 <a href="mailto:timmeeuwsen@hotmail.nl">Stuur een bericht</a>
             </div>
             <picture>
@@ -51,82 +63,58 @@
         </div>
     </section>
 
-    <section class="slider" id="projecten">
-        <div class="container">
-            <h2>Projecten</h2>
-            <p>Hier zijn enkele websites waaraan ik heb gewerkt:</p>
-            <div class="images">
-                <picture><img src="images/oogvereniging.webp" alt="oogvereniging"></picture>
-                <picture><img src="images/smolke.webp" alt="smolke"></picture>
-                <picture><img src="images/moduloo.webp" alt="moduloo"></picture>
-                <picture><img src="images/rodewinkel.webp" alt="rodewinkel"></picture>
-                <picture><img src="images/hace.webp" alt="hace"></picture>
-            </div>
+    <section class="image-text">
+        <div class="circle"></div>
+            <img class="image" src="images/smolke 1.png" alt="">
+    
+        <div class="text">
+            <h2>Snel en Efficiënt</h2>
+            <p>Wij zorgen ervoor dat jouw website snel live gaat, zonder in te boeten aan kwaliteit.</p>
+            <a href="#">Zichtbaarheid verhogen</a>
         </div>
     </section>
 
-    <section class="faq" id="faq">
-        <div class="container">
-            <h2>Veel gestelden vragen</h2>
-            <p>Hieronder staan de meest voorkomende vragen. Voor specifieke vragen neem <a href="#contact">contact</a>.</p>
-            <details>
-                <summary>Hoelang duurt het maken van een website?</summary>
-                <p>Het maken van een website kan al binnen 2 weken klaar zijn, afhankelijk van de grootte van de website.</p>
-            </details>
-            <details>
-                <summary>Kan ik zelf de website beheren nadat deze is gebouwd?</summary>
-                <p>Het aanpasen van de website gaat minder makelijk dan bijvoorbeeld een wordpress of wix website. Waneer je een aanpassing wil aan de website kan je dit voor een goedkope prijs door ons laten doen. Wanneer je echt zelf de website wil aanpassen kunnen we daar een makelijke uitleg voor geven zodat je zonder hulp kan doen.</p>
-            </details>
-            <details>
-                <summary>Is de website te gebruiken op mobiel?</summary>
-                <p>Ja, de website kan worden gebruikt op mobiele telefoons, tablets en computers, en op alle formaten daartussen..</p>
-            </details>
-            <details>
-                <summary>Is de website te gebruiken op alle browsers?</summary>
-                <p>Ja de website kan je gebruiken op verschillenden browsers zoals google chrome, savari, firefox of edge.</p>
-            </details>
-            <details>
-                <summary>Is de website te gebruiken op alle browsers?</summary>
-                <p>Ja de website kan je gebruiken op verschillenden browsers zoals google chrome, savari, firefox of edge.</p>
-            </details>
-        </div>
-    </section>
+    <section class="moduloo image-text flip">
+        <div class="circle"></div>
+        <img class="image" src="images/Moduloo 2.jpg" alt="">
 
-    <section class="prices" id="prices">
-        <div class="container">
-            <h2>Prijzen</h2>
-            <p>De prijs van een website wordt bepaald door verschillende factoren, waaronder de omvang, functionaliteiten en het aantal pagina's van de website.</p>
-
-            <div class="grid">
-                <p>Website/ontwerp</p>
-                <p>€100 tot €1000+ </p>
-                <p>Het domein(url)</p>
-                <p>€10  per jaar  </p>
-                <p>Onderhoud en hosting</p>
-                <p>€10  per maand</p>
-                </div>
+        <div class="text">
+            <h2>Persoonlijke Aanpak</h2>
+            <p>Bij ons sta jij centraal. We luisteren naar jouw wensen en werken nauw met je samen om het perfecte resultaat te bereiken.</p>
+            <a href="#">Zichtbaarheid verhogen</a>
         </div>
     </section>
 
 
-    <section class="header-5" id="contact">
-        <div class="container">
-            <div class="content">
-                <h2>Contact</h2>
-                <p>Stuur een simpele bericht met wat je nodig. Als je iemand kent die een website nodig heeft stuur graag door</p>
-                <div class="buttons">
-                    <a href="https://wa.me/31636589899?text=Hallo,%20ik%20stuur%20je%20een%20bericht%20via%20WhatsApp." target="_blank">Stuur een WhatsApp</a>
-                    <a href="mailto:timmeeuwsen@hotmail.nl">Stuur een mail</a>
-                </div>
-            </div>
+    <section class="rodewinkel image-text">
+        <div class="circle"></div>
+        <img class="image" src="images/Mask group (17).jpg" alt="">
+
+        <div class="text">
+            <h2>Maatwerk ontwerp</h2>
+            <p>Elke website die wij maken is uniek en afgestemd op jouw merkidentiteit en doelgroep.</p>
+            <a href="#">Zichtbaarheid verhogen</a>
         </div>
     </section>
+
+    <section class="energievanzelf image-text flip">
+        <div class="circle"></div>
+        <img class="image" src="images/image 5.jpg" alt="">
+
+        <div class="text">
+            <h2>Betaalbaar</h2>
+            <p>Wij bieden hoogwaardige websites tegen een fractie van de kosten van grote webbureaus.</p>
+            <a href="#">Zichtbaarheid verhogen</a>
+        </div>
+    </section>
+
+
+
 
 
 
 </body>
 <script src="js/menu-4.js"></script>
-<script src="js/slider.js"></script>
 <script src="js/faq.js"></script>
 
 
