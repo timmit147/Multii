@@ -4,15 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header-4.css">
-    <link rel="stylesheet" href="css/header-5.css">
-    <link rel="stylesheet" href="css/header-6.css">
-    <link rel="stylesheet" href="css/menu-4.css">
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="css/faq.css">
-    <link rel="stylesheet" href="css/prices.css">
-    <link rel="stylesheet" href="css/image-text.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <meta name="description" content="Maatwerk websites voor jouw unieke bedrijf. Ontwerp, ontwikkeling en onderhoud. Neem contact op voor een vrijblijvende offerte.">
     <title>My Basic HTML Page</title>
@@ -41,7 +33,6 @@
             <nav>
                 <a href="#projecten">Projecten</a>
                 <a href="#faq">Vragen</a>
-                <a href="#prices">Prijzen</a>
                 <a class="current" href="#contact">Contact</a>
             </nav>
         </div>
@@ -58,64 +49,108 @@
                 <a href="mailto:timmeeuwsen@hotmail.nl">Stuur een bericht</a>
             </div>
             <picture>
-                <img src="images/header-4-image.webp" alt="Vrouw met laptop">
+                <img src="images/Group 30 (1).png" alt="Vrouw met laptop">
             </picture>
         </div>
     </section>
 
-    <section class="image-text">
-        <div class="circle"></div>
-            <img class="image" src="images/smolke 1.png" alt="">
-    
-        <div class="text">
-            <h2>Snel en Efficiënt</h2>
-            <p>Wij zorgen ervoor dat jouw website snel live gaat, zonder in te boeten aan kwaliteit.</p>
-            <a href="#">Zichtbaarheid verhogen</a>
+    <section id="projecten" class="image-text">
+        <div class="container">
+            <div class="circle"></div>
+                <img class="image" src="images/smolke 1.png" alt="">
+        
+            <div class="text">
+                <h2>Snel en Efficiënt</h2>
+                <p>Wij zorgen ervoor dat jouw website snel live gaat, zonder in te boeten aan kwaliteit.</p>
+                <a href="#">Zichtbaarheid verhogen</a>
+            </div>
         </div>
     </section>
 
     <section class="moduloo image-text flip">
-        <div class="circle"></div>
-        <img class="image" src="images/Moduloo 2.jpg" alt="">
+        <div class="container">
+            <div class="circle"></div>
+            <img class="image" src="images/Moduloo 2.jpg" alt="">
 
-        <div class="text">
-            <h2>Persoonlijke Aanpak</h2>
-            <p>Bij ons sta jij centraal. We luisteren naar jouw wensen en werken nauw met je samen om het perfecte resultaat te bereiken.</p>
-            <a href="#">Zichtbaarheid verhogen</a>
+            <div class="text">
+                <h2>Persoonlijke Aanpak</h2>
+                <p>Bij ons sta jij centraal. We luisteren naar jouw wensen en werken nauw met je samen om het perfecte resultaat te bereiken.</p>
+                <a href="#">Zichtbaarheid verhogen</a>
+            </div>
         </div>
     </section>
 
 
     <section class="rodewinkel image-text">
-        <div class="circle"></div>
-        <img class="image" src="images/Mask group (17).jpg" alt="">
+        <div class="container">
+            <div class="circle"></div>
+            <img class="image" src="images/Mask group (17).jpg" alt="">
 
-        <div class="text">
-            <h2>Maatwerk ontwerp</h2>
-            <p>Elke website die wij maken is uniek en afgestemd op jouw merkidentiteit en doelgroep.</p>
-            <a href="#">Zichtbaarheid verhogen</a>
+            <div class="text">
+                <h2>Maatwerk ontwerp</h2>
+                <p>Elke website die wij maken is uniek en afgestemd op jouw merkidentiteit en doelgroep.</p>
+                <a href="#">Zichtbaarheid verhogen</a>
+            </div>
         </div>
     </section>
 
     <section class="energievanzelf image-text flip">
-        <div class="circle"></div>
-        <img class="image" src="images/image 5.jpg" alt="">
+        <div class="container">
+            <div class="circle"></div>
+            <img class="image" src="images/image 5.jpg" alt="">
 
-        <div class="text">
-            <h2>Betaalbaar</h2>
-            <p>Wij bieden hoogwaardige websites tegen een fractie van de kosten van grote webbureaus.</p>
-            <a href="#">Zichtbaarheid verhogen</a>
+            <div class="text">
+                <h2>Betaalbaar</h2>
+                <p>Wij bieden hoogwaardige websites tegen een fractie van de kosten van grote webbureaus.</p>
+                <a href="#">Zichtbaarheid verhogen</a>
+            </div>
         </div>
     </section>
 
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Veel gestelden vragen</h2>
+            <p>Hieronder staan de meest voorkomende vragen. Voor specifieke vragen neem <a href="#contact">contact</a>.</p>
+            <details>
+                <summary>Hoelang duurt het maken van een website?</summary>
+                <p>Het maken van een website kan al binnen 2 weken klaar zijn, afhankelijk van de grootte van de website.</p>
+            </details>
+            <details>
+                <summary>Kan ik zelf de website beheren nadat deze is gebouwd?</summary>
+                <p>Het aanpasen van de website gaat minder makelijk dan bijvoorbeeld een wordpress of wix website. Waneer je een aanpassing wil aan de website kan je dit voor een goedkope prijs door ons laten doen. Wanneer je echt zelf de website wil aanpassen kunnen we daar een makelijke uitleg voor geven zodat je zonder hulp kan doen.</p>
+            </details>
+            <details>
+                <summary>Is de website te gebruiken op mobiel?</summary>
+                <p>Ja, de website kan worden gebruikt op mobiele telefoons, tablets en computers, en op alle formaten daartussen..</p>
+            </details>
+            <details>
+                <summary>Is de website te gebruiken op alle browsers?</summary>
+                <p>Ja de website kan je gebruiken op verschillenden browsers zoals google chrome, savari, firefox of edge.</p>
+            </details>
+            <details>
+                <summary>Is de website te gebruiken op alle browsers?</summary>
+                <p>Ja de website kan je gebruiken op verschillenden browsers zoals google chrome, savari, firefox of edge.</p>
+            </details>
+        </div>
+    </section>
 
+    <section class="header-5" id="contact">
+        <div class="container">
+            <div class="content">
+                <h2>Contact</h2>
+                <p>Stuur een simpele bericht met wat je nodig. Als je iemand kent die een website nodig heeft stuur graag door</p>
+                <div class="buttons">
+                    <a href="https://wa.me/31636589899?text=Hallo,%20ik%20stuur%20je%20een%20bericht%20via%20WhatsApp." target="_blank">Stuur een WhatsApp</a>
+                    <a href="mailto:timmeeuwsen@hotmail.nl">Stuur een mail</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
 
 </body>
-<script src="js/menu-4.js"></script>
-<script src="js/faq.js"></script>
-
+<script src="js/main.js"></script>
 
 </html>

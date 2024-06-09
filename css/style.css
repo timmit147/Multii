@@ -1,0 +1,610 @@
+.slider{
+    margin: 150px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider h2{
+    font-size: 40px;
+    margin: 0px;
+}
+
+.slider .images {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider picture{
+    width: 50%;
+    height: fit-content;
+    box-sizing: border-box;
+    animation: moveLeft 30s linear infinite;
+}
+
+.slider img {
+    border-radius: 10px;
+    border: 1px solid;
+    margin: 20px;
+    width: -webkit-fill-available;
+}
+
+@media screen and (max-width: 768px) {
+
+    .slider{
+        margin: 80px 0px;
+    }
+
+    .slider picture {
+        width: 90vw;
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-500%);  /* This is the amounth of images there are */
+    }
+}
+
+.prices{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.prices h2{
+    font-size: 40px;
+    margin: 0px;
+}
+
+.prices .container > p{
+    max-width: 400px;
+}
+
+.prices .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: max-content;
+    max-width: 100%;
+  }
+
+  .prices .grid p:nth-child(odd){
+    font-weight: bold;
+    padding-right: 40px;
+  }
+
+  .prices .grid p {
+    border-bottom: 2px solid;
+    padding: 20px 0px;
+    margin: 0px;
+  }
+
+  .menu-4 {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    border-bottom: 1px solid;
+}
+
+.menu-4 .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-4 .current{
+    font-weight: 900;
+}
+
+.menu-4 a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    width: fit-content;
+}
+
+.menu-4 a:hover {
+    border-bottom: 2px solid black;
+}
+
+.menu-4 nav {
+    display: flex;
+    justify-content: flex-end; /* Align navigation to the right */
+    gap: 30px;
+    align-items: center;
+}
+
+.hamburger-menu {
+    display: none; /* Hide by default on non-mobile screens */
+}
+
+.menu-4  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+#projecten{
+    scroll-margin-top: 80px;
+}
+
+#faq{
+    scroll-margin-top: 80px;
+}
+
+#price{
+    scroll-margin-top: 80px;
+}
+
+#contact{
+    scroll-margin-top: 80px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu-4 nav {
+        display: none; /* Hide nav links on small screens by default */
+        width: 100%; /* Make nav full width */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .menu-4  .hamburger-menu {
+        display: block; /* Show hamburger menu on small screens */
+        cursor: pointer;
+        justify-self: right;
+        font-size: 35px;
+    }
+
+    .menu-4.active nav {
+        display: flex; /* Show nav when menu is active */
+        flex-direction: column;
+        padding-top: 20px;
+        grid-column: span 2; /* Make nav span both columns on small screens */
+        justify-content: left; /* Center navigation items on small screens */
+        align-items: baseline;
+    }
+    .menu-4.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-4.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-4.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image-text{
+    background-color: #EE7100;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    align-content: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-text .container{
+    grid-template-columns: 4fr 3fr;
+    display: grid;
+    gap: 80px;
+}
+
+.image-text .text{
+    align-content: center;
+    z-index: 1;
+}
+
+.image-text p{
+    max-width: 400px;
+}
+
+.image-text h2{
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.image-text a{
+    color: #EE7100;
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.image-text .image{
+    background-color: black;
+    aspect-ratio: 2/1;
+    border: 5px solid white;
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.image-text .circle {
+    background-color: white;
+    opacity: 40%;
+    position: absolute;
+    height: 80%;
+    aspect-ratio: 1;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.image-text.flip{
+    grid-template-columns: 3fr 4fr;
+}
+
+.image-text.flip .text{
+    order: 1;
+}
+
+.image-text.flip .image{
+    order: 2;
+}
+
+.image-text.flip .circle {
+    left: unset;
+    right: 0%;
+    transform: translate(50%, -50%);
+}
+
+/* variations */
+
+.moduloo.image-text{
+    background-color: #B6E6F4;
+    color: #332C2F;
+}
+
+.moduloo.image-text a{
+    background-color: #332C2F;
+    color: white;
+}
+
+.rodewinkel.image-text{
+    background-color: #E22A37;
+}
+
+.rodewinkel.image-text a{
+    color: #E22A37;
+}
+
+.energievanzelf.image-text{
+    background-color: #C7D75B;
+    color: #332C2F;
+}
+
+.energievanzelf.image-text a{
+    background-color: #332C2F;
+    color: white;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .image-text .container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+    .image-text.flip{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .image-text.flip .text{
+        order: 2;
+    }
+    
+    .image-text.flip .image{
+        order: 1;
+    }
+}
+
+.header-6{
+    background-color: red;
+}
+
+.header-5 {
+    background-color: #E22A37;
+    padding: 150px 0px;
+    box-sizing: border-box;
+    color: white;
+    height: 100vh;
+    align-content: center;
+}
+
+
+.header-5 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-5 h2 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+.header-5 p {
+    max-width: 500px;
+    margin: 0;
+}
+
+.header-5  .buttons{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header-5 img{
+    height: 20px;
+}
+
+
+.header-5 a {
+    color: black;
+    background-color: white;
+    padding: 10px 15px;
+    width: fit-content;
+    font-weight: 900;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    place-items: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.header-5 a:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+a.whatsapp {
+    animation: changeColor 0.5s ease 5s forwards; /* Delay of 5 seconds */
+  }
+  
+
+strong{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+    .header-5 {
+        flex-direction: column;
+        padding: 80px 0px;
+    }
+
+}
+
+
+.header-4 {
+    background-color: #1A3DB9;
+}
+
+.header-4 .container{
+    position: relative;
+    justify-content: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    height: 90vh;
+    align-content: center;
+}
+
+.header-4 h1 {
+    font-size: 40px;
+    margin: 0px;
+    font-weight: 900;
+}
+
+.header-4 picture {
+    display: flex;
+    height: 100%;
+    align-items: end;
+    justify-content: center;
+}
+
+.header-4 img{
+    width: 60%;
+    object-fit: contain;
+    object-position: bottom;
+    box-sizing: border-box;
+}
+
+.header-4 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-4 p {
+    max-width: 400px;
+    margin: 0;
+}
+
+.header-4 a {
+    background-color: white;
+    color: #1A3DB9;
+    font-weight: 600;
+    padding: 10px 15px;
+    width: fit-content;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    place-items: center;
+    text-decoration: none;
+}
+
+
+.header-4 a:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+strong{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+
+    .header-4 h1{
+        font-size: 30px;
+    }
+
+    .header-4 img{
+        height: 100%;
+        padding-right: unset;
+    }
+    
+    .header-4 picture{
+        overflow: hidden;
+    }
+    .header-4 .container {
+        padding-bottom: 0;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .header-4 .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    
+    .header-4 .content{
+        order: 2;
+    }
+
+    .header-4 picture{
+        justify-content: left;
+        order: 1;
+    }
+
+}
+
+
+.faq{
+    background-color: #1A3DB9;
+    padding: 150px 0px;
+    color:white;
+}
+
+.faq .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq details{
+    max-width: 500px;
+}
+
+.faq summary{
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    place-content: space-between;
+}
+
+.faq summary:hover{
+    background-color: black;
+}
+
+.faq summary::after {
+    content: '';
+    cursor: pointer;
+    background-repeat: no-repeat;
+    height: 20px;
+    aspect-ratio: 1;
+    background-size: contain;
+  }
+  
+  .faq details[open] summary::after {
+    background-image: url("../images/minus.svg");
+  }
+  
+  .faq details summary::after {
+    background-image: url("../images/plus.svg");
+  }
+
+.faq p {
+    margin-bottom: 0px;
+}
+
+.faq a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+
+.faq a:hover {
+    color: orange;
+}
+
+.faq .container > p{
+    margin: 0px;
+    max-width: 400px;
+}
+
+.faq h2{
+    margin: 0px;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .faq h2{
+        font-size: 30px;
+    }
+
+    .faq{
+        padding: 80px 0px;
+    }
+}
