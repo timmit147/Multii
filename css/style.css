@@ -129,7 +129,7 @@ body{
     border-radius: 50%;
 }
 
-.image-text.flip{
+.image-text.flip .container{
     grid-template-columns: 3fr 4fr;
 }
 
@@ -293,6 +293,7 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    color: #ededed;
 }
 
 .header-4 p {
@@ -301,7 +302,7 @@ body{
 }
 
 .header-4 a {
-    background-color: white;
+    background-color: #ededed;
     color: #1A3DB9;
     font-weight: 600;
     padding: 10px 15px;
@@ -431,7 +432,7 @@ body{
         gap: 20px;
         padding: 20px;
     }
-    .image-text.flip{
+    .image-text.flip .container{
         grid-template-columns: 1fr;
         gap: 20px;
     }
