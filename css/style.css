@@ -1,80 +1,20 @@
-.slider{
-    margin: 150px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-}
+/* Start general */
 
-.slider h2{
-    font-size: 40px;
+body{
     margin: 0px;
+    font-family: sans-serif;
 }
 
-.slider .images {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.slider picture{
-    width: 50%;
-    height: fit-content;
-    box-sizing: border-box;
-    animation: moveLeft 30s linear infinite;
-}
 
-@keyframes moveLeft {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-500%); 
-    }
-}
+/* Start menu-4 */
 
-.slider img {
-    border-radius: 10px;
-    border: 1px solid;
-    margin: 20px;
-    width: -webkit-fill-available;
-}
-
-.prices{
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-.prices h2{
-    font-size: 40px;
-    margin: 0px;
-}
-
-.prices .container > p{
-    max-width: 400px;
-}
-
-.prices .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    width: max-content;
-    max-width: 100%;
-  }
-
-  .prices .grid p:nth-child(odd){
-    font-weight: bold;
-    padding-right: 40px;
-  }
-
-  .prices .grid p {
-    border-bottom: 2px solid;
-    padding: 20px 0px;
-    margin: 0px;
-  }
-
-  .menu-4 {
+.menu-4 {
     position: sticky;
     top: 0;
     background-color: white;
@@ -106,13 +46,13 @@
 
 .menu-4 nav {
     display: flex;
-    justify-content: flex-end; /* Align navigation to the right */
+    justify-content: flex-end;
     gap: 30px;
     align-items: center;
 }
 
 .hamburger-menu {
-    display: none; /* Hide by default on non-mobile screens */
+    display: none;
 }
 
 .menu-4  .hamburger-menu .bar {
@@ -123,33 +63,7 @@
     transition: transform 0.4s, opacity 0.4s;
 }
 
-#projecten{
-    scroll-margin-top: 80px;
-}
-
-#faq{
-    scroll-margin-top: 80px;
-}
-
-#price{
-    scroll-margin-top: 80px;
-}
-
-#contact{
-    scroll-margin-top: 80px;
-}
-
-
-body{
-    margin: 0px;
-    font-family: sans-serif;
-}
-
-.container{
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 20px;
-}
+/* Start image-text */
 
 .image-text{
     background-color: #EE7100;
@@ -233,8 +147,6 @@ body{
     transform: translate(50%, -50%);
 }
 
-/* variations */
-
 .moduloo.image-text{
     background-color: #B6E6F4;
     color: #332C2F;
@@ -263,10 +175,13 @@ body{
     color: white;
 }
 
+/* Start header-6 */
+
 .header-6{
     background-color: red;
 }
 
+/* Start header-5  */
 .header-5 {
     background-color: #E22A37;
     padding: 150px 0px;
@@ -326,16 +241,17 @@ body{
     cursor: pointer;
 }
 
-a.whatsapp {
+.header-5 a.whatsapp {
     animation: changeColor 0.5s ease 5s forwards; /* Delay of 5 seconds */
   }
   
 
-strong{
+.header-5 strong{
     font-weight: 700;
 }
 
 
+/* Start header-4 */
 
 .header-4 {
     background-color: #1A3DB9;
@@ -405,10 +321,11 @@ strong{
 }
 
 
-strong{
+.header-4 strong{
     font-weight: 700;
 }
 
+/* Start faq */
 .faq{
     background-color: #1A3DB9;
     padding: 150px 0px;
@@ -485,7 +402,7 @@ strong{
 }
 
 
-/* Responsive design */
+/* Start Responsive */
 
 @media screen and (max-width: 800px) {
     .header-5 {
