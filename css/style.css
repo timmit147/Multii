@@ -295,9 +295,20 @@ body{
     color: #ededed;
 }
 
-.header-4 p {
+.header-4 .content p {
     max-width: 400px;
     margin: 0;
+}
+
+.header-4 .name{
+    text-align: left;
+}
+
+.header-4 .profile-picture{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: center;
 }
 
 .header-4 a {
@@ -421,9 +432,6 @@ body{
     
     .header-4 picture{
         overflow: hidden;
-    }
-    .header-4 .container {
-        padding-bottom: 0;
     }
 
     .image-text .container{
