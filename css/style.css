@@ -270,6 +270,20 @@ body{
 
 .header-4 {
     background-color: #508EC7;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-4  .circle {
+    background-color: white;
+    opacity: 40%;
+    position: absolute;
+    height: 80%;
+    aspect-ratio: 1;
+    top: 50%;
+    right: 0%;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
 }
 
 .header-4 .container{
@@ -441,6 +455,10 @@ body{
 
     .header-4 h1 {
         font-size: 30px;
+    }
+    .header-4 .circle {
+        height: 50%;
+        top: 20%;
     }
 }
 
