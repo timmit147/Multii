@@ -269,7 +269,7 @@ body{
 /* Start header-4 */
 
 .header-4 {
-    background-color: #1A3DB9;
+    background-color: #508EC7;
 }
 
 .header-4 .container{
@@ -279,7 +279,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: white;
-    height: 90vh;
+    height: 100vh;
     align-content: center;
 }
 
@@ -287,6 +287,7 @@ body{
     font-size: 40px;
     margin: 0px;
     font-weight: 900;
+    line-height: 1.2em;
 }
 
 .header-4 picture {
@@ -297,10 +298,10 @@ body{
 }
 
 .header-4 img{
-    width: 60%;
     object-fit: contain;
     object-position: bottom;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .header-4 .content {
@@ -318,18 +319,23 @@ body{
 
 .header-4 .name{
     text-align: left;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .header-4 .profile-picture{
     display: flex;
-    align-items: center;
-    gap: 20px;
+    align-items: end;
+    gap: 10px;
     align-self: center;
+    flex-direction: column;
+    margin-top: 60px;
 }
 
 .header-4 a {
     background-color: #ededed;
-    color: #1A3DB9;
+    color: #508EC7;
     font-weight: 600;
     width: fit-content;
     padding: 8px 10px;
@@ -431,6 +437,12 @@ body{
 
 
 /* Start Responsive */
+@media screen and (max-width: 1000px) {
+
+    .header-4 h1 {
+        font-size: 30px;
+    }
+}
 
 @media screen and (max-width: 800px) {
     .header-5 {
@@ -521,6 +533,9 @@ body{
     .menu-4.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+    .header-4 h1 {
+        font-size: 25px;
+    }
 }
 
 
@@ -540,6 +555,18 @@ body{
         justify-content: left;
         order: 1;
     }
+    
+    
+    .header-4 .profile-picture{
+        align-items: baseline;
+    }
 
+    .header-4 .name {
+        font-weight: 100;
+    }
+
+    .header-4 img {
+        max-width: 400px;
+    }
 }
 
