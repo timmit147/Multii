@@ -15,11 +15,13 @@ body{
 /* Start menu-4 */
 
 .menu-4 {
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: white;
     z-index: 999;
     border-bottom: 1px solid;
+    right: 0;
+    left: 0;
 }
 
 .menu-4 .container{
@@ -105,6 +107,19 @@ body{
     text-decoration: none;
     font-weight: 600;
     display: inline-block;
+    transition: 0.5s;
+}
+
+
+
+.image-text a:hover{
+    background-color: #332C2F;
+    color: white;
+}
+
+.image-text.flip a:hover{
+    color: #332C2F;
+    background-color: white;
 }
 
 .image-text .image{
@@ -146,30 +161,30 @@ body{
     transform: translate(50%, -50%);
 }
 
-.moduloo.image-text{
+.moduloo{
     background-color: #B6E6F4;
     color: #332C2F;
 }
 
-.moduloo.image-text a{
+.moduloo a{
     background-color: #332C2F;
     color: white;
 }
 
-.rodewinkel.image-text{
+.rodewinkel{
     background-color: #E22A37;
 }
 
-.rodewinkel.image-text a{
+.rodewinkel a{
     color: #E22A37;
 }
 
-.energievanzelf.image-text{
+.energievanzelf{
     background-color: #C7D75B;
     color: #332C2F;
 }
 
-.energievanzelf.image-text a{
+.energievanzelf a{
     background-color: #332C2F;
     color: white;
 }
@@ -231,6 +246,7 @@ body{
     place-items: center;
     text-decoration: none;
     font-size: 14px;
+    transition: 0.5s;
 }
 
 
@@ -315,13 +331,14 @@ body{
     background-color: #ededed;
     color: #1A3DB9;
     font-weight: 600;
-    padding: 10px 15px;
     width: fit-content;
-    border-radius: 10px;
+    padding: 8px 10px;
+    border-radius: 5px;
     display: flex;
     gap: 10px;
     place-items: center;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 
@@ -338,7 +355,7 @@ body{
 
 /* Start faq */
 .faq{
-    background-color: #1A3DB9;
+    background-color: #8829b4;
     padding: 150px 0px;
     color:white;
 }
